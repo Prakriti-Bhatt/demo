@@ -162,20 +162,69 @@ dataLayer.push({
  dataLayer.push({
  event: "purchase",
  ecommerce1: { 
+	 transaction_id: "T_12345",
+      value: 25.42,
+      tax: 4.90,
+      shipping: 5.99,
+      currency: "USD",
 	items: [
  {
- item_id: 12,
- location_id: "12ls32",
- currency: ["USD","INR"],
- coupon: "PA3",
- item_category: "Online"
+ item_id: "ITM_12345",
+
+ item_name: "Python",
+
+ affiliation: "online_Course",
+
+ currency: "INR",
+
+ discount: 100,
+
+ item_brand: "MOOC",
+
+ item_category: "Python",
+
+ item_category2: "ML",
+
+ item_category3: "DS",
+
+ item_category4: "CS",
+
+ item_variant: "Online",
+
+ location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+
+ price: 5000,
+
+ quantity: 1
  },
  {
- item_id: 34,
-	location_id: "3522abcd",
- currency: ["USD","INR"],
-	coupon: "IA6",
- item_category: "Online", 
+ item_id: "ITM_12345",
+
+ item_name: "Web Analytics",
+
+ affiliation: "online_Course",
+
+ currency: "INR",
+
+ discount: 100,
+
+ item_brand: "MOOC",
+
+ item_category: "web",
+
+ item_category2: "ML",
+
+ item_category3: "DS",
+
+ item_category4: "CS",
+
+ item_variant: "Online",
+
+ location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+
+ price: 5000,
+
+ quantity: 1
  }]
 });	
 	</script>
