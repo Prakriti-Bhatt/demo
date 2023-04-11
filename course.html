@@ -67,7 +67,13 @@ dataLayer.push({
   event: "view_item_list",
   ecommerce: 
      {
-      item_id: "ITM_12345",
+	transaction_id: "T_12345",
+      value: 25.42,
+      tax: 4.90,
+      shipping: 5.99,
+      currency: "INR",
+	items : [
+		{ item_id: "ITM_12345",
 
       item_name: "Python",
 
@@ -94,7 +100,8 @@ dataLayer.push({
       price: 5000,
 
       quantity: 1
-    }
+    },
+	
 });
 	    dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
@@ -130,6 +137,72 @@ dataLayer.push({
 	}
 });
 
+	    
+ dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+dataLayer.push({
+  event: "purchase",
+  ecommerce: {
+	  items : [
+	{	  
+	 item_id: "ITM_12345",
+
+      item_name: "Python",
+
+      affiliation: "online_Course",
+
+     currency: "INR",
+
+      discount: 100,
+
+      item_brand: "MOOC",
+
+      item_category: "Python",
+
+      item_category2: "ML",
+
+      item_category3: "DS",
+
+      item_category4: "CS",
+
+      item_variant: "Online",
+
+      location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+
+      price: 5000,
+
+      quantity: 11
+	},
+	{
+	item_id: "ITM_12346",
+
+      item_name: "Web Analytics",
+
+      affiliation: "online_Course",
+
+     currency: "INR",
+
+      discount: 120,
+
+      item_brand: "MOOC",
+
+      item_category: "web",
+
+      item_category2: "ML",
+
+      item_category3: "DS",
+
+      item_category4: "CS",
+
+      item_variant: "Online",
+
+      location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+
+      price: 5000,
+
+      quantity: 11
+}]
+});
+	    
 	</script>
 
     <title>Contact Page</title>
