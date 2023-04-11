@@ -67,13 +67,7 @@ dataLayer.push({
   event: "view_item_list",
   ecommerce: 
      {
-	transaction_id: "T_12345",
-      value: 25.42,
-      tax: 4.90,
-      shipping: 5.99,
-      currency: "INR",
-	items : [
-		{ item_id: "ITM_12345",
+	     item_id: "ITM_12345",
 
       item_name: "Python",
 
@@ -100,7 +94,7 @@ dataLayer.push({
       price: 5000,
 
       quantity: 1
-    },
+
 	
 });
 	    dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
@@ -142,6 +136,11 @@ dataLayer.push({
 dataLayer.push({
   event: "purchase",
   ecommerce: {
+	  transaction_id: "T_12345",
+      value: 25.42,
+      tax: 4.90,
+      shipping: 5.99,
+      currency: "INR",
 	  items : [
 	{	  
 	 item_id: "ITM_12345",
@@ -249,7 +248,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 &emsp;  &emsp;  &emsp;  &emsp;  <button id="btncart1"><a href="cart.html"onclick="dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "add_to_cart",
+ 
   ecommerce: {
+	transaction_id: "T_12345",
+      value: 25.42,
+      tax: 4.90,
+      shipping: 5.99,
+      currency: "INR",
       item_id: "ITM_12345",
 
       item_name: "Python",
@@ -289,6 +294,12 @@ dataLayer.push({
 dataLayer.push({
   event: "add_to_cart",
   ecommerce: {
+	transaction_id: "T_12345",
+      value: 25.42,
+      tax: 4.90,
+      shipping: 5.99,
+      currency: "INR",
+	
       item_id: "ITM_12346",
 
       item_name: "Web Analytics",
